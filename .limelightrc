@@ -3,7 +3,7 @@
 limelight -m config width            3
 limelight -m config radius           8
 limelight -m config placement        interior
-limelight -m config active_color     0xff8382c9
+limelight -m config active_color     0xff605eba
 limelight -m config normal_color     0xff555555
 
 echo "limelight configuration loaded.."
