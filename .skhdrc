@@ -39,7 +39,7 @@ alt - 9 : yabai -m space --focus 9
 # open terminal
 alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
 # open browser
-alt - w : open -n -a brave\ browser
+alt - w : open -n -a firefox\ developer\ edition
 # close current window
 alt - q : yabai -m window --close
 # enter fullscreen mode for the focused container
