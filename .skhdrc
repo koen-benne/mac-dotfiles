@@ -37,7 +37,7 @@ alt - 7 : yabai -m space --focus 7
 alt - 8 : yabai -m space --focus 8
 alt - 9 : yabai -m space --focus 9
 # open terminal
-alt - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+alt - return : /Applications/iTerm.app/Contents/MacOS/iTerm2 --single-instance -d ~
 # open browser
 alt - w : open -n -a firefox\ developer\ edition
 # close current window
