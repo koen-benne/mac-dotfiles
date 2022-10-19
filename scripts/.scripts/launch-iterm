@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Script for launching iterm in a non annoying way
+
+set -e
+
+osascript - <<EOF
+tell application "iTerm"
+  if it is running then
+    create window with default profile
+  else
+    activate
+  end if
+end tell
+EOF
