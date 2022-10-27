@@ -12,3 +12,10 @@ set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx PNPM_HOME "/Users/koenbenne/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
+
+# nvm shit
+set -gx NVM_DIR "$HOME/.nvm"
+nvm use 18 --silent
+
+# neovide
+alias nvide "neovide --frame buttonless"
