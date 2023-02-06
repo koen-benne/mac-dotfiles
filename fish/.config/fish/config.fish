@@ -13,9 +13,9 @@ set -gx PNPM_HOME "/Users/koenbenne/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
-# nvm shit
-set -gx NVM_DIR "$HOME/.nvm"
-nvm use 18 --silent
-
 # neovide
-alias nvide "neovide --frame buttonless"
+alias nvide "neovide --frame buttonless --multigrid"
+alias lg "lazygit"
+
+# asdf shi
+source /usr/local/opt/asdf/libexec/asdf.fish

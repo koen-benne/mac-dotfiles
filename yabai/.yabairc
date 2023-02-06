@@ -50,7 +50,7 @@ yabai -m config left_padding                 12
 yabai -m config right_padding                12
 yabai -m config window_gap                   06
 
-yabai -m config window_animation_duration    0.1
+yabai -m config window_animation_duration    0
 
 # Disable animations when opening and closing windows.
 # defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
