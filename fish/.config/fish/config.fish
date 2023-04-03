@@ -8,6 +8,13 @@ fish_add_path '/Users/koenbenne/.platformsh/bin'
 
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 
+# tmux stuff
+alias to="turbotmux.sh open"
+alias tc="turbotmux.sh close"
+alias tp="turbotmux.sh project"
+alias tn="turbotmux.sh new"
+alias lg="lazygit"
+
 # pnpm
 set -gx PNPM_HOME "/Users/koenbenne/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
