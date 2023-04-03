@@ -19,7 +19,7 @@ yabai -m config status_bar_foreground_color  0xff$CFORE
 
 yabai -m config window_border                on
 yabai -m config window_border_radius         12
-yabai -m config window_border_width          4
+yabai -m config window_border_width          2
 yabai -m config active_window_border_color   0xff$CACTV
 yabai -m config normal_window_border_color   0xff$CNORM
 yabai -m config insert_window_border_color   0xff$CINSE
