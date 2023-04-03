@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # fast tmuxing
 
 tmux_running=$(pgrep tmux)

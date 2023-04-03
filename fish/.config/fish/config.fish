@@ -5,8 +5,11 @@ end
 set fish_greeting
 fish_add_path /Users/koenbenne/Library/Python/3.9/bin
 fish_add_path '/Users/koenbenne/.platformsh/bin'
+fish_add_path '/Users/koenbenne/.local/bin'
 
 set -gx XDG_CONFIG_HOME "$HOME/.config"
+
+set -gx FZF_DEFAULT_OPTS "--height 40% --layout=reverse --border"
 
 # tmux stuff
 alias to="turbotmux.sh open"

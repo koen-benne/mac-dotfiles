@@ -2,8 +2,8 @@
 alt - k : yabai -m window --focus prev
 alt - j : yabai -m window --focus next
 # Resize window
-alt - h : yabai -m window west --resize right:-300:0 2> /dev/null || yabai -m window --resize right:-300:0
-alt - l : yabai -m window east --resize left:300:0 2> /dev/null || yabai -m window --resize left:300:0
+# alt - h : yabai -m window west --resize right:-300:0 2> /dev/null || yabai -m window --resize right:-300:0
+# alt - l : yabai -m window east --resize left:300:0 2> /dev/null || yabai -m window --resize left:300:0
 # shift window in current workspace
 alt + shift - h : yabai -m window --swap west
 alt + shift - j : yabai -m window --swap south
