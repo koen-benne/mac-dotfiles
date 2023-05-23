@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # spacebar padding on top screen
-yabai -m config external_bar all:34:0
+# yabai -m config external_bar all:34:0
 
 # Pywall stuff
 source ~/.cache/wal/colors.sh # pywal scheme - update if needed

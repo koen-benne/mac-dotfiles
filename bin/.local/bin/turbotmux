@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/env bash
 # fast tmuxing
 
 tmux_running=$(pgrep tmux)
@@ -10,6 +10,9 @@ case $1 in
       exit 0
     fi
     sesh=$(tmux list-sessions | fzf-tmux | cut -d ":" -f 1)
+    if [ -z $sesh ]; then
+      exit 0
+    fi
     if [ -z "${TMUX}" ]; then
       tmux attach-session -t ${sesh}
     else
@@ -20,13 +23,14 @@ case $1 in
     if [ -z $tmux_running ]; then
       echo "No tmux sessions running"
       exit 0
-    elif [ -n $2 ]; then
-      tmux kill-session -t ${2}
-      echo "Session ${2} closed"
+    elif [ $2 != "" ]; then
+      $(tmux kill-session -t ${2})
     else
       sesh=$(tmux list-sessions | fzf-tmux | cut -d ":" -f 1)
+      if [ -z $sesh ]; then
+        exit 0
+      fi
       tmux kill-session -t ${sesh}
-      echo "Session ${sesh} closed"
     fi
     ;;
   new)
@@ -37,10 +41,13 @@ case $1 in
     tmux new-session -s ${2}
     ;;
   project)
-    # project=$(find $proj_dirs -name ".git" -mindepth=1 -maxdepth=1 -type d | sed 's/\/.git//g' | fzf-tmux)
     project=$(find ~/work/ ~/personal/ -mindepth 1 -maxdepth 1 -type d | fzf-tmux)
+    if [ -z $project ]; then
+      exit 0
+    fi
+
     proj_name=$(basename ${project} | tr . _)
-    echo "Opening ${proj_name} in tmux"
+
     tmux new-session -s ${proj_name} -c ${project} -d
     tmux send-keys -t ${proj_name} "nvim" C-m
     if [ -z "${TMUX}" ]; then
@@ -56,4 +63,3 @@ case $1 in
 esac
 
 exit 0
-

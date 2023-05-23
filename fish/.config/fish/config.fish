@@ -12,10 +12,10 @@ set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx FZF_DEFAULT_OPTS "--height 40% --layout=reverse --border"
 
 # tmux stuff
-alias to="turbotmux.sh open"
-alias tc="turbotmux.sh close"
-alias tp="turbotmux.sh project"
-alias tn="turbotmux.sh new"
+alias to="turbotmux open"
+alias tc="turbotmux close"
+alias tp="turbotmux project"
+alias tn="turbotmux new"
 alias lg="lazygit"
 
 # pnpm
