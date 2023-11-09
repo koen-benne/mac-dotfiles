@@ -19,6 +19,7 @@ alias tc="turbotmux close"
 alias tp="turbotmux project"
 alias tn="turbotmux new"
 alias lg="lazygit"
+# alias switch="darwin-rebuild switch --flake ~/.config/nix-darwin"
 
 # pnpm
 set -gx PNPM_HOME "/Users/koenbenne/Library/pnpm"
